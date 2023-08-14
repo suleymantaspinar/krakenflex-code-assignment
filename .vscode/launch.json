@@ -1,0 +1,22 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+      {
+          "type": "node",
+          "request": "launch",
+          "name": "Krakenflex",
+          "program": "${workspaceFolder}/bin/index",
+          "outputCapture": "std",
+          "runtimeExecutable": "${env:HOME}/.nvm/versions/node/v18.16.0/bin/node",
+          "env": {
+              "SERVER_PORT": "8075",
+              "NODE_ENV": "dev",
+          },
+          "skipFiles": [
+              "${workspaceFolder}/node_modules/**",
+              "<node_internals>/internal/**.js",
+              "<node_internals>/*/*"
+          ]     
+      }
+  ]
+}
